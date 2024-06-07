@@ -1,0 +1,114 @@
+.about-us {
+
+  padding: 140px 115px 170px 125px;
+
+  .container {
+
+    background-image: url($base-assets-path + 'svg/blue_clouds.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: map-get($content-widths, 'md');
+
+  }
+
+  &__text {
+    margin-bottom: 110px;
+
+    h6 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: map-get($font-sizes, 'xxs');
+      letter-spacing: 1px;
+      color: map-get($colors, 'headers-color');
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 550;
+      color: map-get($colors, 'headers-color');
+    }
+  }
+
+  &__features {
+    @include flex-gap(37px);
+    text-align: center;
+    margin-bottom: 95px;
+
+    .feature, .feature-last {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 140px;
+      position: relative;
+
+      p {
+        font-weight: 550;
+        line-height: 20px;
+        font-size: map-get($font-sizes, 'xs');
+        color: map-get($colors, 'btn-secondary-color');
+      }
+
+    }
+
+    .dash {
+      position: relative;
+
+      svg {
+        position: absolute;
+        top: 122px;
+        right: -15px;
+      }
+    }
+
+    h3 {
+      color: map-get($colors, 'header-color');
+      font-size: map-get($font-sizes, 'md');
+      margin-bottom: 25px;
+
+    }
+
+    .icon {
+      $logos-bg-dimensions: 69px;
+
+      background-color: map-get($colors, 'logos-bg');
+      border-radius: 50%;
+      width: $logos-bg-dimensions;
+      height: $logos-bg-dimensions;
+      margin-bottom: 20px;
+
+      display: flex;
+      justify-content: center;
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 8px 0 map-get($colors, 'logos-hover-color');
+      }
+
+    }
+  }
+
+  &__buttons {
+
+    @include flex-gap(16px);
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-weight: 550;
+      font-size: map-get($font-sizes, 'xs');
+      color: map-get($colors, 'btn-secondary-color');
+    }
+
+  }
+
+
+}

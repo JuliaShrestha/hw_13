@@ -1,0 +1,58 @@
+.plan-and-manage {
+  background-color: map-get($colors, 'plan-and-manage-bg-color');
+  max-height: 775px;
+
+  &__content {
+
+    @include flex-gap(55px);
+    padding: 170px 0 170px 105px;
+    max-height: 775px;
+  }
+
+  &__text {
+    $margin-bottom: 27px;
+    max-width: 370px;
+
+    h6 {
+      color: map-get($colors, 'headers-color');
+      margin-bottom: $margin-bottom;
+      font-size: map-get($font-sizes, 'xs');
+    }
+
+    h2 {
+      color: map-get($colors, 'headers-color');
+      font-weight: 600;
+      margin-bottom: $margin-bottom;
+      font-size: map-get($font-sizes, 'xl');
+
+      span {
+        font-weight: 400;
+      }
+    }
+
+      p {
+        color: map-get($colors, 'main-font-color');
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        font-weight: 500;
+        margin-bottom: 47px;
+      }
+  }
+
+  &__buttons {
+
+    .view-video {
+      margin-right: -5px;
+    }
+  }
+
+  &__image {
+    max-width: 655px;
+    display: flex;
+    justify-content: center;
+    height: 650px;
+    position: relative;
+    top: -45px;
+  }
+
+}

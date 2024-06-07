@@ -1,3 +1,68 @@
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  vertical-align: baseline;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input, button, textarea, select {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  line-height: 1;
+  background: white;
+  color: black;
+}
+
 .header__end, .header__start, .header__content {
   display: flex;
   justify-content: space-between;
@@ -272,6 +337,140 @@ a {
 }
 .partners__logo a:hover path {
   fill: #5982E7;
+}
+
+.plan-and-manage {
+  background-color: #F5F8FF;
+  max-height: 775px;
+}
+.plan-and-manage__content {
+  gap: 55px;
+  display: flex;
+  padding: 170px 0 170px 105px;
+  max-height: 775px;
+}
+.plan-and-manage__text {
+  max-width: 370px;
+}
+.plan-and-manage__text h6 {
+  color: #3D4F9F;
+  margin-bottom: 27px;
+  font-size: 11px;
+}
+.plan-and-manage__text h2 {
+  color: #3D4F9F;
+  font-weight: 600;
+  margin-bottom: 27px;
+  font-size: 36px;
+}
+.plan-and-manage__text h2 span {
+  font-weight: 400;
+}
+.plan-and-manage__text p {
+  color: #8D96BD;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  margin-bottom: 47px;
+}
+.plan-and-manage__buttons .view-video {
+  margin-right: -5px;
+}
+.plan-and-manage__image {
+  max-width: 655px;
+  display: flex;
+  justify-content: center;
+  height: 650px;
+  position: relative;
+  top: -45px;
+}
+
+.about-us {
+  padding: 140px 115px 170px 125px;
+}
+.about-us .container {
+  background-image: url("./../../assets/svg/blue_clouds.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-us__content {
+  max-width: 767px;
+}
+.about-us__text {
+  margin-bottom: 110px;
+}
+.about-us__text h6 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #3D4F9F;
+}
+.about-us__text h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 550;
+  color: #3D4F9F;
+}
+.about-us__features {
+  gap: 37px;
+  display: flex;
+  text-align: center;
+  margin-bottom: 95px;
+}
+.about-us__features .feature, .about-us__features .feature-last {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 140px;
+  position: relative;
+}
+.about-us__features .feature p, .about-us__features .feature-last p {
+  font-weight: 550;
+  line-height: 20px;
+  font-size: 11px;
+  color: #ADB4D2;
+}
+.about-us__features .dash {
+  position: relative;
+}
+.about-us__features .dash svg {
+  position: absolute;
+  top: 122px;
+  right: -15px;
+}
+.about-us__features h3 {
+  color: #4074F8;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+.about-us__features .icon {
+  background-color: #F1F5FF;
+  border-radius: 50%;
+  width: 69px;
+  height: 69px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.about-us__features .icon:hover {
+  cursor: pointer;
+  box-shadow: 0 0 8px 0;
+}
+.about-us__buttons {
+  gap: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-us__buttons p {
+  font-weight: 550;
+  font-size: 11px;
+  color: #ADB4D2;
 }
 
 /*# sourceMappingURL=home-page.css.map */

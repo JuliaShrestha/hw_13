@@ -10,6 +10,7 @@ $font-sizes:(
     "md": 15px,
     "sm": 13px,
     "xs": 11px,
+    "xxs": 10px,
 );
 
 $colors:(
@@ -32,6 +33,10 @@ $colors:(
     "btn-shadow": #C9D1E799,
     "banner-bg": #f5f6ff,
     "logo-hover-color": #5982E7,
+    "plan-and-manage-bg-color":#F5F8FF,
+    "logos-bg": #F1F5FF,
+    "header-color": #4074F8,
+    "lines-color": #DAE4FE,
 );
 
 $content-widths:(
@@ -45,5 +50,5 @@ $containers:(
     "container": 1200px,
     "container-lg": 840px,
     "container-md": 767px,
-    "sm": 577px,
+    "container-sm": 577px,
 );
