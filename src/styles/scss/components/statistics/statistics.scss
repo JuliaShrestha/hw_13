@@ -1,0 +1,73 @@
+.statistics {
+
+  position: relative;
+  padding: 65px 0;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 50%;
+  }
+
+  &:before {
+    z-index: -1;
+    background-color: map-get($colors, 'blue');
+  }
+
+  &:after {
+    right: 0;
+    z-index: -1;
+    background-color: map-get($colors, 'statistics-right-bg');
+  }
+
+  &__content {
+    @include flex-gap(180px);
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__productivity, &__users {
+
+    width: calc(50% - (180px / 2));
+  }
+
+  &__productivity {
+    text-align: right;
+
+    h2 {
+      letter-spacing: 2px;
+      color: map-get($colors, 'white-color');
+      font-weight: 400;
+      font-size: map-get($font-sizes, 'xxl');
+    }
+
+    p {
+      line-height: 24px;
+      font-weight: 550;
+      letter-spacing: 1px;
+      color: map-get($colors, 'white-color');
+      font-size: map-get($font-sizes, 'lg');
+    }
+  }
+
+  &__users {
+
+    h2 {
+      color: map-get($colors, 'blue');
+      font-weight: 400;
+      font-size: map-get($font-sizes, 'xxl');
+      letter-spacing: 1px;
+    }
+
+    p {
+      color: map-get($colors, 'blue');
+      font-weight: 550;
+      font-size: map-get($font-sizes, 'lg');
+      line-height: 24px;
+      letter-spacing: 1px;
+    }
+  }
+}
